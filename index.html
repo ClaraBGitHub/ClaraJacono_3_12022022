@@ -12,37 +12,51 @@
         <div id=main>
             <!--Header-->
             <header>
-                <div id=logo>
+                <div class="header__logo">
                     <img src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="ohmyfood">
-                </div>
-                <div id=localisation>
-                    <i class="fas fa-map-marker-alt fa-lg" ></i>
-                    <p>Paris, Belleville</p>
                 </div>
             </header>
             <!--Explorer nos restaurents-->
-            <div id=introSection>
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                <button>
-                    Explorer nos restaurants
-                </button>
+            <div class="location">
+                <div class="currentLocation">
+                    <i class="currentLocation__icon fas fa-map-marker-alt fa-lg" ></i>
+                    <p>Paris, Belleville</p>
+                </div>
+                <div class="explorer">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                    <button class="explorer__btn">
+                        Explorer nos restaurants
+                    </button>
+                </div>
             </div>
             <!--Fonctionnement-->
-            <div id=fonctionnement>
-                <div id=choisissezUnRestaurant>
-                    <i class="fa-mobile-alt fas tuto__icon"></i>
-                    <p>Choisissez un restaurant</p>
-                </div>
-                <div id=composezVotreMenu>
-                    <i class="fas fa-solid fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </div>
-                <div id=dégustezAuRestaurant>
-                    <i class="fas fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
-            </div>
+            <section class="fonctionnementSection">
+                <h2 class="fonctionnementSection__title">Fonctionnement</h2>
+                    <div class="fonctionnement">
+                        <div class="fonctionnement__card">
+                            <div class="fonctionnement__number">
+                                <p>1</p>
+                            </div>
+                            <i class="fa-mobile-alt fas fonctionnement_icon"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                        <div class="fonctionnement__card">
+                            <div class="fonctionnement__number">
+                                <p>2</p>
+                            </div>
+                            <i class="fas fa-solid fa-list-ul fonctionnement_icon"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                        <div class="fonctionnement__card">
+                            <div class="fonctionnement__number">
+                                <p>3</p>
+                            </div>
+                            <i class="fas fa-solid fa-store fonctionnement_icon"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </div>
+            </section>
             <!--Restaurants-->
             <div id=restaurants>
 

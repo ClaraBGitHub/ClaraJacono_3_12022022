@@ -1,0 +1,157 @@
+/*breakpoints*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Roboto";
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  box-shadow: 0px 5px 9px 3px #dadada;
+}
+header .header__logo {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 50%;
+  height: 50%;
+  margin: 20px 5px 20px 5px;
+}
+
+.location {
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.location h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.currentLocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+.currentLocation__icon {
+  display: flex;
+  font-size: 10px;
+  height: auto;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 35px;
+}
+.explorer p {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.explorer__btn {
+  border: none;
+  border-radius: 100px;
+  padding: 15px 5px 15px 5px;
+  font-size: 1.16em;
+  font-weight: 500;
+  background-color: #9356DC;
+  color: white;
+  margin: 10px;
+  background: linear-gradient(180deg, #FF79DA -15%, #9356DC 80%);
+  box-shadow: 0px 5px 9px 3px #dadada;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+.explorer__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 1px 6px 9px 5px #c5c5c5;
+}
+
+.fonctionnementSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.fonctionnementSection__title {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.fonctionnement {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.fonctionnement__card {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 12px 20px 12px 32px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 9px 3px #dadada;
+  margin: 0px 0px 20px 10px;
+  position: relative;
+}
+.fonctionnement__card i {
+  margin-right: 15px;
+}
+.fonctionnement__card p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.fonctionnement__card:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.fonctionnement__card:hover i {
+  color: #9356DC;
+}
+.fonctionnement__number {
+  position: absolute;
+  background-color: #9356DC;
+  left: -13px;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

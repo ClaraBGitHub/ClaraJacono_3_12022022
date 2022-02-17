@@ -1,0 +1,95 @@
+.location {
+    background-color: $colour-background-lightgray;
+    width: 100%;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.currentLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colour-background-darkgrey;
+
+    &__icon {
+        display: flex;
+        font-size: 10px;
+        height: auto;
+        align-items: center;
+        padding-right: 15px;
+    }
+}
+
+.explorer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 35px;
+    p {
+        font-weight: 300;
+        margin-top : 10px;
+    }
+    &__btn {
+        @include button;
+    }
+}
+.fonctionnementSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    &__title {
+        display: flex;
+        justify-content: center;
+        justify-content: flex-start;
+    }
+}
+.fonctionnement {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    &__card {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: 12px 20px 12px 32px;
+        background-color: $colour-background-lightgray;
+        border-radius: 20px;
+        box-shadow: 0px 5px 9px 3px rgb(218, 218, 218);
+        margin: 0px 0px 20px 10px;
+        position: relative;
+        i {
+            margin-right: 15px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+        &:hover{
+            background-color: rgba(147, 86, 220, 0.1);
+            i {
+                color: $colour-primaire;
+            }
+        }
+    }
+    &__number{
+        position: absolute;
+        background-color: $colour-primaire;
+        left: -13px;
+        border-radius: 100px;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: white;
+    }
+}
