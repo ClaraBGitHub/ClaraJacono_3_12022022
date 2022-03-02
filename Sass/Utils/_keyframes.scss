@@ -1,0 +1,51 @@
+@keyframes fondu{
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+// animation des menus à l'arrivée sur le site //
+@keyframes fadein {
+    from {
+    transform: translateY(5px);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+    transform: translateY(5px);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+// animation de rotation du check //
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes coeurTransition {
+    from {
+
+    }
+     to {
+
+     }
+}

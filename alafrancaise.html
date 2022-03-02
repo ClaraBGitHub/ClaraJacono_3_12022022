@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!--confirme que le doc est en html-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/> <!-- Encodage (charset) :indique la façon dont le fichier est enregistré. C'est lui qui détermine comment les caractères spéciaux vont s'afficher (accents, idéogrammes chinois et japonais, caractères arabes, etc.).-->
+        <link rel="stylesheet" href="CSS/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> <!--Représente de manière schématique la partie visible d’une page web et nous l'ajustons en fonction de la taille de l'écran-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> <!--îcones-->
+        <script src="https://kit.fontawesome.com/8a37c75378.js" crossorigin="anonymous"></script>
+        <title>ohmyfood</title>
+    </head>
+    <body>
+        <div id=main>
+            <!--Header-->
+            <header>
+                <div class="fleche">
+                    <a href="./index.html">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="header__logo">
+                    <h1>ohmyfood</h1>
+                </div>
+            </header>
+            <div class="header__img">
+                <img src="./Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+            </div>
+            <div class="main__menu">
+                <div class="menu__titre">
+                    <h2>À la française</h2>
+                    <div class="fill__heart">
+                        <span><i class="fill far fa-heart fa-2x"></i></span>
+                    </div>
+                </div>
+                <section class="menu__section">
+                    
+                        <!--Entrées-->
+                        <div class="section">
+                            <div class="section__title">
+                                <h3>Entrées</h3>
+                                <div class="section__trait"></div>
+                            </div>  
+                            <div class="food">
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Tartare de poulpe acidulé</h4>
+                                        <p>Aux zestes d'orange</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>25€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Velouté de légumes d'antan</h4>
+                                        <p>Carotte, panais, topinambour</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>35€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Soupe à l'oignon</h4>
+                                        <p>Revisitée</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>20€</strong></span>
+                                    </div>
+                                        <div class="food__check">
+                                            <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!--Plats-->
+                        <div class="section">
+                            <div class="section__title">
+                                <h3>Plats</h3>
+                                <div class="section__trait"></div>
+                            </div> 
+                            <div class="food">
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Coquilles Saint-Jacques</h4>
+                                        <p>Accompagnées d'une purée de panais</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>40€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Magret de canard</h4>
+                                        <p>Et parmentier de pommes de terre</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>35€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                                        <p>Sur son lit de gnocchis aux légumes</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>44€</strong></span>
+                                    </div>
+                                        <div class="food__check">
+                                            <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Desserts-->
+                        <div class="section">
+                            <div class="section__title">
+                                <h3>Desserts</h3>
+                                <div class="section__trait"></div>
+                            </div>
+                            <div class="food">
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Pétales de violettes glacés</h4>
+                                        <p>Et purée de noisettes</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>18€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Fondant au chocolat</h4>
+                                        <p>Revisité</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>22€</strong></span>
+                                    </div>
+                                    <div class="food__check">
+                                        <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                    </div>
+                                </div>
+                                <div class="food__meal">
+                                    <div class="food__description">
+                                        <h4>Millefeuille croustillant</h4>
+                                        <p>Myrtilles et pâte d’amande</p>
+                                    </div>
+                                    <div class="food__price">
+                                        <span><strong>23€</strong></span>
+                                    </div>
+                                        <div class="food__check">
+                                            <span><i class="fas fa-check-circle fa-2x"></i></span>
+                                        </div>
+                                </div>
+                            </div>  
+                        </div>
+                   
+                </section>
+                <!--Bouton commander-->
+                <div class="commander">
+                    <button class="explorer__btn--commander">Commander</button>
+                </div>
+           </div>
+            
+            <!--Footer-->
+            <footer>
+                <div class="footer__container">
+                    <div class="footer__logo">
+                        <h3>ohmyfood</h3>
+                    </div>
+                    <ul class="footer__liste">
+                        <li> 
+                            <a href="#">
+                                <i class="fa fa-utensils"></i>
+                                Proposer un restaurant
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-hands-helping"></i>
+                                Devenir partenaire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Mentions légales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@myfood.com">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>  
+    </body>

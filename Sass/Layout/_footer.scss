@@ -1,0 +1,30 @@
+.footer {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: darken($colour-background-darkgrey, 70%);
+        color: white;
+    }
+    &__logo {
+        width: 40%;
+        h3 {
+            font-family: 'Shrikhand';
+            font-size: 1.2rem;
+            margin: 10px 0px 10px 0px;
+        }
+    }
+    &__liste {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 0px;
+        margin: 0px;
+        i {
+            margin-right: 10px;
+            font-size: 13px;
+            height: auto;
+            width: 2%;
+        }
+    }
+} 

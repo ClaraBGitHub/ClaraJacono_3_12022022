@@ -1,13 +1,36 @@
 header {
     width: 100%;
-    box-shadow: 0px 5px 9px 3px rgb(218, 218, 218);
-    .header__logo {
+    box-shadow: 0px 1px 7px 4px rgb(218, 218, 218);
+    position: relative;
+    .fleche {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        font-size: 20px;
+        @include desktop {
+            font-size: 30px;
+        }
+    }
+}
+
+// Menu header //
+.header {
+    &__img {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+    }
+    &__logo {
         display: flex;
         justify-content: center;
-    }
-    img {
-        width: 50%;
-        height: 50%;
-        margin: 20px 5px 20px 5px;
+        h1 {
+            font-family: 'Shrikhand';
+            @include desktop {
+            font-size: 2.5em;
+            }
+        }
     }
 }
