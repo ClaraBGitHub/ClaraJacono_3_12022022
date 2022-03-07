@@ -1,3 +1,17 @@
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
 @keyframes fondu{
     0% {
         transform: scaleX(0);
@@ -43,9 +57,34 @@
 
 @keyframes coeurTransition {
     from {
-
+        font-weight: normal;
     }
      to {
-
+        font-weight: bold;
      }
 }
+
+// animation loader //
+@keyframes loader {
+    0% {
+        transform: rotate(0deg); 
+        opacity: 1;
+    } 
+    50% { 
+        transform: rotate(180deg); 
+        opacity: 0.5;
+    }
+    100% { 
+        transform: rotate(360deg); 
+        opacity: 0;
+    }
+  }
+
+  @keyframes opacity {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }

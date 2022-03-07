@@ -1,3 +1,38 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: fadeout 9s linear;
+    animation-fill-mode: both;
+    z-index: 1;
+    &__animation {
+        border: 16px solid $colour-primaire; /* Light grey */
+        border-top: 16px solid $colour-secondaire; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: loader 2s linear infinite;
+        position: fixed;
+        box-shadow: -5px -5px $colour-background-darkgrey;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        z-index: 2;
+  }
+}
+
+main, header, footer {
+    animation-name: opacity;
+    animation-duration: 3500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
 .location {
     background-color: $colour-background-lightgray;
     width: 100%;
@@ -30,7 +65,12 @@
     text-align: center;
     justify-content: center;
     padding: 35px;
-    @include desktop {
+    @include desktop{
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    @include tablet {
         display: block;
         text-align: center;
         padding: 15px;
@@ -41,6 +81,12 @@
     }
     &__btn {
         @include button;
+        @include desktop {
+            padding: 20px;
+        }
+        @include tablet {
+            padding: 20px; 
+        }
     }
 }
 .fonctionnementSection {
@@ -122,6 +168,7 @@
         box-shadow: 0px 5px 9px 3px rgb(218, 218, 218) ;
         width: 100%;
         height: 239px;
+        position: relative;
         cursor: pointer;
         img{
             display: flex;
@@ -136,6 +183,7 @@
             background-color: $colour-tertiaire;
             color: darken($colour-tertiaire, 50%);
             right: 2em;
+            top: 1em;
             padding: 8px;
             font-weight: bold;
             border-radius: 2px;
@@ -143,6 +191,8 @@
     &__contenu {
         display: flex;
         align-items: center;
+        margin-right: 8px;
+        margin-left: 2px;
     }
     &__description {
         display: flex;
@@ -156,26 +206,18 @@
             }
     }
     &__coeur {
-        background-color: white;
-        width: 10%;
-        cursor: pointer;
-        i {
-           font-weight: initial;
-           ::before {
-            font-weight: bold;
-            transition: color 1s ease-out;
-           }
-        }
-        :hover{
-            animation: fill 0.3s ease-out;
-            background: linear-gradient(to bottom, $colour-secondaire -15%, $colour-primaire 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            ::before {
-                color: red;
-                cursor: pointer;
-            }
+        justify-content: center;
+        .fa-heart {
+            font-size: 26px;
+            &:hover {
+                background: linear-gradient(#9356dc, #ff79da);
+                background-clip: text;
+                color: transparent;
+                -webkit-background-clip: text;
+                transition: all 0.6s linear;
+                font-weight: 900;
+            } 
         }
     }
 }
+

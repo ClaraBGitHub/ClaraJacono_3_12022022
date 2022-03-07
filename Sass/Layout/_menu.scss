@@ -30,7 +30,17 @@
         width: 100%;
     }
  }
-
+.fa-heart{
+    font-size: 26px;
+    &:hover {
+        background: linear-gradient(#9356dc, #ff79da);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: all 0.8s linear;
+        font-weight: 900;
+    } 
+}
 .section {
     &__title {
         text-transform: uppercase;
