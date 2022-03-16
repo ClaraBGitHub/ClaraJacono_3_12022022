@@ -208,6 +208,7 @@ main, header, footer {
   display: flex;
   justify-content: center;
   justify-content: flex-start;
+  font-family: "Roboto";
 }
 
 .fonctionnement {
